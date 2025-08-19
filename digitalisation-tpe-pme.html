@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalisation TPE PME : Guide Transformation Digitale 2025 | iZiChange Occitanie</title>
+    <meta name="description" content="Guide complet digitalisation TPE PME Occitanie : étapes transformation digitale, outils essentiels, accompagnement expert. Design cohérent charte graphique iZiChange officielle #1F2A63 #F39448. Conseils dirigeants entreprises transformation numérique iZiChange Occitanie.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --izichange-blue: #1F2A63;
+            --izichange-orange: #F39448;
+        }
+        
+        .bg-izichange-blue { background-color: var(--izichange-blue); }
+        .text-izichange-blue { color: var(--izichange-blue); }
+        .bg-izichange-orange { background-color: var(--izichange-orange); }
+        .text-izichange-orange { color: var(--izichange-orange); }
+        .border-izichange-orange { border-color: var(--izichange-orange); }
+        .hover\:bg-izichange-orange:hover { background-color: var(--izichange-orange); }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--izichange-blue) 0%, #2c3e84 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(31, 42, 99, 0.1);
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, var(--izichange-orange) 0%, #ff6b47 100%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .tool-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(31, 42, 99, 0.15);
+        }
+        
+         {
+            body { -webkit-print-color-adjust: exact; }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="bg-izichange-blue text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="https://www.izichange.fr/" class="text-2xl font-bold text-izichange-orange">iZiChange</a>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="https://www.izichange.fr/" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Accueil</a>
+                        <a href="https://www.izichange.fr/#services" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="https://www.izichange.fr/#processus" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Processus</a>
+                        <a href="https://www.izichange.fr/#expertise" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Expertise</a>
+                        <a href="https://www.izichange.fr/#equipe" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Équipe</a>
+                        <a href="https://www.izichange.fr/#temoignages" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Témoignages</a>
+                        <a href="https://www.izichange.fr/#contact" class="hover:text-izichange-orange px-3 py-2 text-sm font-medium">Contact</a>
+                        <a href="index.html" class="bg-izichange-orange px-3 py-2 rounded text-sm font-medium">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation Blog -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <div>
+                            <a href="https://www.izichange.fr/" class="text-gray-500 hover:text-izichange-blue">
+                                <i class="fas fa-home"></i>
+                                <span class="sr-only">Accueil</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                            <a href="index.html" class="ml-4 text-sm font-medium text-gray-500 hover:text-izichange-blue">Blog</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                            <span class="ml-4 text-sm font-medium text-izichange-blue">Digitalisation TPE PME</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Digitalisation TPE PME
+                <span class="text-izichange-orange">Guide Transformation Digitale 2025</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                Du diagnostic à la mise en œuvre : votre feuille de route complète pour réussir votre transformation digitale
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#guide-complet" class="bg-izichange-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    <i class="fas fa-rocket mr-2"></i>Commencer le guide
+                </a>
+                <a href="https://www.izichange.fr/#contact" class="border-2 border-white text-white hover:bg-white hover:text-izichange-blue px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>Diagnostic gratuit
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Articles Blog -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-izichange-blue mb-4">Autres Articles du Blog iZiChange</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="formation-ia-tpe-pme.html" class="block bg-gradient-to-r from-blue-50 to-blue-100 p-6 rounded-lg card-shadow hover:shadow-lg transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-robot text-2xl text-izichange-blue mr-3"></i>
+                            <h3 class="text-lg font-semibold text-izichange-blue">Formation IA TPE PME</h3>
+                        </div>
+                        <p class="text-gray-600">Guide complet sur l'Intelligence Artificielle pour les petites et moyennes entreprises</p>
+                    </a>
+                    
+                    <a href="cybersecurite-pme.html" class="block bg-gradient-to-r from-orange-50 to-orange-100 p-6 rounded-lg card-shadow hover:shadow-lg transition duration-300">
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-shield-alt text-2xl text-izichange-orange mr-3"></i>
+                            <h3 class="text-lg font-semibold text-izichange-orange">Cybersécurité PME</h3>
+                        </div>
+                        <p class="text-gray-600">Protection et solutions sécurité pour entreprises - Guide complet 2025</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="guide-complet">
+        
+        <!-- Introduction -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">Pourquoi digitaliser votre TPE/PME en 2025 ?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <i class="fas fa-chart-line text-4xl text-izichange-blue mb-4"></i>
+                    <h3 class="text-xl font-semibold text-izichange-blue mb-2">+30% de productivité</h3>
+                    <p class="text-gray-600">Gains moyens observés après digitalisation</p>
+                </div>
+                <div class="text-center p-6 bg-orange-50 rounded-lg">
+                    <i class="fas fa-euro-sign text-4xl text-izichange-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold text-izichange-orange mb-2">-25% de coûts</h3>
+                    <p class="text-gray-600">Réduction des coûts opérationnels</p>
+                </div>
+                <div class="text-center p-6 bg-green-50 rounded-lg">
+                    <i class="fas fa-users text-4xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-green-600 mb-2">+40% satisfaction client</h3>
+                    <p class="text-gray-600">Amélioration de l'expérience client</p>
+                </div>
+            </div>
+
+            <div class="prose max-w-none">
+                <p class="text-lg text-gray-700 mb-6">
+                    <strong>La transformation digitale n'est plus une option, c'est une nécessité.</strong> En 2025, 
+                    les entreprises qui n'ont pas entamé leur digitalisation risquent de perdre en compétitivité face 
+                    à des concurrents plus agiles et mieux outillés.
+                </p>
+                
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-6">
+                    <div class="flex">
+                        <i class="fas fa-exclamation-triangle text-yellow-400 mr-3 mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold text-yellow-800 mb-2">Attention !</h4>
+                            <p class="text-yellow-700">
+                                76% des PME françaises ont déjà entamé leur transformation digitale. 
+                                Ne restez pas à la traîne !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Diagnostic Initial -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                <span class="step-number mr-4">1</span>
+                Diagnostic : Où en êtes-vous ?
+            </h2>
+            
+            <div class="ml-20">
+                <p class="text-lg text-gray-700 mb-6">
+                    Avant de vous lancer, il est essentiel d'évaluer votre niveau de maturité digitale actuel. 
+                    Cette étape vous permettra d'identifier vos priorités et d'établir un plan d'action personnalisé.
+                </p>
+
+                <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-izichange-blue mb-4">
+                        <i class="fas fa-clipboard-check mr-2"></i>
+                        Checklist d'évaluation digitale
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">Infrastructure & Outils</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Site web professionnel</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Présence réseaux sociaux</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Système de gestion (CRM/ERP)</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Solutions de paiement en ligne</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Sauvegarde cloud</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">Processus & Organisation</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Processus digitalisés</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Formation équipes</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Cybersécurité</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Analyse de données</li>
+                                <li><i class="fas fa-square mr-2 text-gray-400"></i>Automatisation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-izichange-orange text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">
+                        <i class="fas fa-gift mr-2"></i>
+                        Diagnostic gratuit iZiChange
+                    </h3>
+                    <p class="mb-4">
+                        Nos experts réalisent un audit complet de votre maturité digitale et vous proposent 
+                        un plan d'action personnalisé en 48h.
+                    </p>
+                    <a href="https://www.izichange.fr/#contact" class="bg-white text-izichange-orange px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                        Demander mon diagnostic
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Définir sa Stratégie -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                <span class="step-number mr-4">2</span>
+                Définir sa stratégie digitale
+            </h2>
+            
+            <div class="ml-20">
+                <p class="text-lg text-gray-700 mb-6">
+                    Une stratégie digitale réussie repose sur des objectifs clairs, un budget défini et une 
+                    feuille de route adaptée à votre secteur d'activité et à vos contraintes.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bullseye text-2xl text-izichange-blue"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-izichange-blue mb-2">Objectifs SMART</h3>
+                        <p class="text-gray-600">Spécifiques, Mesurables, Atteignables, Réalistes, Temporels</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-calculator text-2xl text-izichange-orange"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-izichange-orange mb-2">Budget & ROI</h3>
+                        <p class="text-gray-600">Planification financière et calcul du retour sur investissement</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-route text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-green-600 mb-2">Roadmap</h3>
+                        <p class="text-gray-600">Planning de déploiement par phases prioritaires</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-izichange-blue mb-4">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        Exemples d'objectifs par secteur
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">Commerce / Service</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fas fa-arrow-right text-izichange-orange mr-2"></i>Augmenter les ventes en ligne de 40%</li>
+                                <li><i class="fas fa-arrow-right text-izichange-orange mr-2"></i>Réduire le temps de traitement commandes de 50%</li>
+                                <li><i class="fas fa-arrow-right text-izichange-orange mr-2"></i>Améliorer la satisfaction client (NPS +20)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3">Industrie / Manufacturing</h4>
+                            <ul class="space-y-2 text-gray-700">
+                                <li><i class="fas fa-arrow-right text-izichange-blue mr-2"></i>Optimiser la chaîne de production (-15% coûts)</li>
+                                <li><i class="fas fa-arrow-right text-izichange-blue mr-2"></i>Prédire les pannes équipements (maintenance 4.0)</li>
+                                <li><i class="fas fa-arrow-right text-izichange-blue mr-2"></i>Traçabilité complète des produits</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Outils Essentiels -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                <span class="step-number mr-4">3</span>
+                Outils digitaux essentiels pour TPE/PME
+            </h2>
+            
+            <div class="ml-20">
+                <p class="text-lg text-gray-700 mb-8">
+                    Découvrez les outils incontournables pour digitaliser efficacement votre entreprise, 
+                    classés par ordre de priorité et adaptés à votre budget.
+                </p>
+
+                <!-- Priorité 1 -->
+                <div class="mb-10">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">PRIORITÉ 1</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Fondations digitales</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-globe text-3xl text-izichange-blue mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Site Web Professionnel</h4>
+                                    <p class="text-gray-600">Vitrine digitale essentielle</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Un site web responsive, optimisé SEO et sécurisé. C'est la base de votre présence digitale.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">À partir de 2 000€</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">ROI rapide</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-shield-alt text-3xl text-izichange-orange mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Cybersécurité de Base</h4>
+                                    <p class="text-gray-600">Protection essentielle</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Antivirus professionnel, firewall, sauvegarde automatique et formation équipes.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">100-300€/mois</span>
+                                <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-sm">Obligatoire</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-cloud text-3xl text-blue-500 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Solutions Cloud</h4>
+                                    <p class="text-gray-600">Flexibilité et mobilité</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Suite bureautique cloud (Microsoft 365, Google Workspace) pour la collaboration.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">50-150€/mois</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Scalable</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-users text-3xl text-green-500 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">CRM Simple</h4>
+                                    <p class="text-gray-600">Gestion relation client</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Centraliser vos contacts, suivre vos prospects et fidéliser vos clients.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">30-100€/mois</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">+25% ventes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Priorité 2 -->
+                <div class="mb-10">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">PRIORITÉ 2</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Optimisation & Automation</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-cogs text-3xl text-izichange-blue mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">ERP/Gestion Intégrée</h4>
+                                    <p class="text-gray-600">Vision 360° de l'activité</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Comptabilité, stocks, commandes, facturation dans un seul système.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">200-800€/mois</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Gain temps</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-robot text-3xl text-izichange-orange mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Automatisation Marketing</h4>
+                                    <p class="text-gray-600">Nurturing et conversion</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Email automation, lead scoring, campagnes personnalisées.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">100-400€/mois</span>
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">+35% leads</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-chart-bar text-3xl text-purple-500 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Analytics & BI</h4>
+                                    <p class="text-gray-600">Pilotage par la data</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Tableau de bord, KPIs métier, aide à la décision basée sur les données.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">150-500€/mois</span>
+                                <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm">Décisions</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-mobile-alt text-3xl text-pink-500 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Application Mobile</h4>
+                                    <p class="text-gray-600">Proximité client</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                App native ou PWA pour vos clients, catalogue, commandes, fidélisation.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">5 000-20 000€</span>
+                                <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded text-sm">Différenciation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Priorité 3 -->
+                <div class="mb-8">
+                    <div class="flex items-center mb-6">
+                        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">PRIORITÉ 3</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Innovation & Avenir</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-brain text-3xl text-izichange-blue mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">Intelligence Artificielle</h4>
+                                    <p class="text-gray-600">Automatisation intelligente</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Chatbots, reconnaissance vocale, analyse prédictive, recommandations.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">Variable</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Futur</span>
+                            </div>
+                        </div>
+
+                        <div class="tool-card bg-white border-2 border-gray-200 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-cube text-3xl text-izichange-orange mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold text-gray-800">IoT & Capteurs</h4>
+                                    <p class="text-gray-600">Objets connectés métier</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 mb-4">
+                                Monitoring équipements, gestion énergétique, maintenance prédictive.
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-izichange-orange font-semibold">1 000-10 000€</span>
+                                <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-sm">ROI 2-3 ans</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Plan d'Implémentation -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                <span class="step-number mr-4">4</span>
+                Plan d'implémentation par phases
+            </h2>
+            
+            <div class="ml-20">
+                <p class="text-lg text-gray-700 mb-8">
+                    Une approche progressive garantit le succès de votre transformation digitale. 
+                    Voici un planning type sur 12-18 mois.
+                </p>
+
+                <div class="space-y-8">
+                    <!-- Phase 1 -->
+                    <div class="border-l-4 border-izichange-blue pl-6">
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-izichange-blue text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">PHASE 1</span>
+                                <h3 class="text-xl font-bold text-izichange-blue">Fondations (Mois 1-3)</h3>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Actions prioritaires</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Audit sécurité et mise à niveau</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Migration cloud (emails, fichiers)</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Refonte/création site web</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Formation équipes aux outils de base</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Investissement</h4>
+                                    <div class="bg-white p-4 rounded">
+                                        <p class="text-2xl font-bold text-izichange-blue">8 000 - 15 000€</p>
+                                        <p class="text-gray-600">Setup initial + 3 mois abonnements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="border-l-4 border-izichange-orange pl-6">
+                        <div class="bg-orange-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-izichange-orange text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">PHASE 2</span>
+                                <h3 class="text-xl font-bold text-izichange-orange">Optimisation (Mois 4-8)</h3>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Actions d'optimisation</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Déploiement CRM/ERP</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Automatisation marketing</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Mise en place analytics</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Optimisation processus métier</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Investissement</h4>
+                                    <div class="bg-white p-4 rounded">
+                                        <p class="text-2xl font-bold text-izichange-orange">5 000 - 12 000€</p>
+                                        <p class="text-gray-600">Licences + intégrations + formation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="border-l-4 border-green-500 pl-6">
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">PHASE 3</span>
+                                <h3 class="text-xl font-bold text-green-600">Innovation (Mois 9-18)</h3>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Projets avancés</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Application mobile</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Intelligence artificielle métier</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>IoT et objets connectés</li>
+                                        <li><i class="fas fa-check text-green-500 mr-2"></i>Innovation continue</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-3">Investissement</h4>
+                                    <div class="bg-white p-4 rounded">
+                                        <p class="text-2xl font-bold text-green-600">10 000+€</p>
+                                        <p class="text-gray-600">Selon projets spécifiques</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-calculator mr-2"></i>
+                        Budget total estimé
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-izichange-blue">25K - 40K€</p>
+                            <p class="text-gray-600">TPE (5-10 salariés)</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-izichange-orange">40K - 80K€</p>
+                            <p class="text-gray-600">PME (10-50 salariés)</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-green-600">80K - 150K€</p>
+                            <p class="text-gray-600">PME+ (50+ salariés)</p>
+                        </div>
+                    </div>
+                    <p class="text-center text-gray-600 mt-4">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        ROI attendu : 200-400% sur 3 ans
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Formation & Change Management -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                <span class="step-number mr-4">5</span>
+                Formation des équipes & accompagnement au changement
+            </h2>
+            
+            <div class="ml-20">
+                <p class="text-lg text-gray-700 mb-6">
+                    <strong>70% des projets de transformation digitale échouent</strong> à cause d'une mauvaise 
+                    gestion du changement. L'humain reste au cœur de la réussite.
+                </p>
+
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 mb-8">
+                    <div class="flex">
+                        <i class="fas fa-exclamation-triangle text-red-400 mr-3 mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-semibold text-red-800 mb-2">Erreurs à éviter</h4>
+                            <ul class="text-red-700 space-y-1">
+                                <li>• Imposer les outils sans consultation des utilisateurs</li>
+                                <li>• Négliger la formation et l'accompagnement</li>
+                                <li>• Sous-estimer la résistance au changement</li>
+                                <li>• Vouloir aller trop vite sans consolidation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-izichange-blue mb-4">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Plan de formation
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-800 mb-2">Formation générale (Tous)</h4>
+                                <p class="text-gray-700 text-sm mb-2">
+                                    Sensibilisation digitale, cybersécurité, outils collaboratifs
+                                </p>
+                                <span class="text-izichange-blue font-semibold">4h - En ligne</span>
+                            </div>
+                            
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-800 mb-2">Formation métier (Utilisateurs)</h4>
+                                <p class="text-gray-700 text-sm mb-2">
+                                    CRM, ERP, outils spécifiques au poste de travail
+                                </p>
+                                <span class="text-izichange-orange font-semibold">8h - Présentiel</span>
+                            </div>
+                            
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-gray-800 mb-2">Formation expert (Key users)</h4>
+                                <p class="text-gray-700 text-sm mb-2">
+                                    Administration, paramétrage, support niveau 1
+                                </p>
+                                <span class="text-green-600 font-semibold">16h - Mixte</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-izichange-orange mb-4">
+                            <i class="fas fa-users mr-2"></i>
+                            Accompagnement changement
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-user-tie text-izichange-blue mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Champions du changement</h4>
+                                    <p class="text-gray-700 text-sm">Identifier et former des ambassadeurs internes</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-comments text-izichange-orange mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Communication régulière</h4>
+                                    <p class="text-gray-700 text-sm">Workshops, réunions, feedback continu</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-trophy text-green-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Reconnaissance & motivation</h4>
+                                    <p class="text-gray-700 text-sm">Valoriser les bonnes pratiques et succès</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <i class="fas fa-life-ring text-purple-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Support continu</h4>
+                                    <p class="text-gray-700 text-sm">Hotline, documentation, sessions de rattrapage</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-izichange-blue text-white p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">
+                        <i class="fas fa-handshake mr-2"></i>
+                        Accompagnement iZiChange
+                    </h3>
+                    <p class="mb-4">
+                        Nos consultants vous accompagnent dans toutes les phases de votre transformation : 
+                        de l'audit initial au support post-déploiement, en passant par la formation des équipes.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <i class="fas fa-search text-3xl text-izichange-orange mb-2"></i>
+                            <p class="font-semibold">Audit & Stratégie</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-rocket text-3xl text-izichange-orange mb-2"></i>
+                            <p class="font-semibold">Déploiement</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-support text-3xl text-izichange-orange mb-2"></i>
+                            <p class="font-semibold">Support & Évolution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Mesure des Résultats -->
+        <article class="bg-white rounded-lg card-shadow p-8 mb-8">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                <span class="step-number mr-4">6</span>
+                Mesurer les résultats & ROI
+            </h2>
+            
+            <div class="ml-20">
+                <p class="text-lg text-gray-700 mb-6">
+                    Une transformation digitale réussie se mesure. Voici les KPIs essentiels à suivre 
+                    pour valider le retour sur investissement de vos projets.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-izichange-blue mb-4">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            KPIs Opérationnels
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-semibold text-gray-800">Productivité</h4>
+                                    <span class="text-izichange-blue font-bold">+25-40%</span>
+                                </div>
+                                <p class="text-gray-700 text-sm">
+                                    Temps de traitement des tâches, automatisation des processus
+                                </p>
+                            </div>
+                            
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-semibold text-gray-800">Qualité</h4>
+                                    <span class="text-green-600 font-bold">-60% erreurs</span>
+                                </div>
+                                <p class="text-gray-700 text-sm">
+                                    Réduction des erreurs manuelles, amélioration de la précision
+                                </p>
+                            </div>
+                            
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-semibold text-gray-800">Coûts opérationnels</h4>
+                                    <span class="text-izichange-orange font-bold">-15-30%</span>
+                                </div>
+                                <p class="text-gray-700 text-sm">
+                                    Réduction des coûts de fonctionnement et maintenance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-izichange-orange mb-4">
+                            <i class="fas fa-euro-sign mr-2"></i>
+                            KPIs Business
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-semibold text-gray-800">Chiffre d'affaires</h4>
+                                    <span class="text-purple-600 font-bold">+20-35%</span>
+                                </div>
+                                <p class="text-gray-700 text-sm">
+                                    Nouveaux canaux, amélioration conversion, cross-selling
+                                </p>
+                            </div>
+                            
+                            <div class="bg-pink-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-semibold text-gray-800">Satisfaction client</h4>
+                                    <span class="text-pink-600 font-bold">NPS +25 pts</span>
+                                </div>
+                                <p class="text-gray-700 text-sm">
+                                    Amélioration de l'expérience, réactivité, personnalisation
+                                </p>
+                            </div>
+                            
+                            <div class="bg-indigo-50 p-4 rounded-lg">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-semibold text-gray-800">Time to market</h4>
+                                    <span class="text-indigo-600 font-bold">-40% délais</span>
+                                </div>
+                                <p class="text-gray-700 text-sm">
+                                    Accélération du développement produit et mise sur le marché
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        Timeline ROI attendu
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="bg-red-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">3M</div>
+                            <p class="font-semibold text-gray-800">Premiers gains</p>
+                            <p class="text-gray-600 text-sm">Productivité équipes</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-orange-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">6M</div>
+                            <p class="font-semibold text-gray-800">ROI positif</p>
+                            <p class="text-gray-600 text-sm">Retour investissement</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">12M</div>
+                            <p class="font-semibold text-gray-800">Optimisation</p>
+                            <p class="text-gray-600 text-sm">Processus matures</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-2">24M</div>
+                            <p class="font-semibold text-gray-800">Transformation</p>
+                            <p class="text-gray-600 text-sm">Avantage concurrentiel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Call to Action -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Prêt à digitaliser votre entreprise ?
+            </h2>
+            <p class="text-xl mb-8 text-gray-200">
+                Nos experts iZiChange vous accompagnent dans votre transformation digitale avec une approche pragmatique et orientée résultats.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-search text-3xl text-izichange-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Diagnostic gratuit</h3>
+                    <p class="text-gray-200">Audit complet de votre maturité digitale</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-road text-3xl text-izichange-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Feuille de route</h3>
+                    <p class="text-gray-200">Plan d'action personnalisé et priorisé</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-handshake text-3xl text-izichange-orange mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Accompagnement</h3>
+                    <p class="text-gray-200">Support continu jusqu'à la réussite</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.izichange.fr/#contact" class="bg-izichange-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>Contactez-nous
+                </a>
+                <a href="mailto:contact@izichange.fr" class="border-2 border-white text-white hover:bg-white hover:text-izichange-blue px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i>contact@izichange.fr
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-izichange-orange mb-4">iZiChange</h3>
+                    <p class="text-gray-300 mb-4">
+                        Transformation & Innovation made easy
+                    </p>
+                    <p class="text-gray-400">
+                        Accompagnement digital, formation IA et solutions cybersécurité pour TPE PME en Occitanie.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://www.izichange.fr/#services" class="hover:text-izichange-orange">Optimisation Stratégique</a></li>
+                        <li><a href="https://www.izichange.fr/#services" class="hover:text-izichange-orange">Automatisation Raisonnée</a></li>
+                        <li><a href="https://www.izichange.fr/#services" class="hover:text-izichange-orange">Sécurité & Confiance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Blog</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="formation-ia-tpe-pme.html" class="hover:text-izichange-orange">Formation IA TPE PME</a></li>
+                        <li><a href="digitalisation-tpe-pme.html" class="hover:text-izichange-orange">Digitalisation TPE PME</a></li>
+                        <li><a href="cybersecurite-pme.html" class="hover:text-izichange-orange">Cybersécurité PME</a></li>
+                        <li><a href="index.html" class="hover:text-izichange-orange">Accueil Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:contact@izichange.fr" class="hover:text-izichange-orange">contact@izichange.fr</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:+33686846429" class="hover:text-izichange-orange">+33 (0)6 86 84 64 29</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Occitanie, France
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 iZiChange - Tous droits réservés. Expertise accompagnement digital & formation IA TPE PME Occitanie.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDmDDX1NouFIw5Wq9uUz5QrARzpQLPnFlonSjyMSqXOhWX5ukbnDmQiRkwbWjBbUfrWmaqKzk6ZD6la7Xis0UM7PRd%2FDxJzb9gOUimJMivbn36AyTS9GW6gQqHSAH2GxRuxfAjAaq76AnfZyQLcd77nk3gBkYqGzaNEA6HPuIajFRHRy4SGaranehC6MkJTRHSC3OrgSIVrCC9c9bncSciuXTuH07oB5FwrUxyWRtUcVZSf%2BaaNAn7GYHyF%2BcEYEqU%2Fy4GUhCAbBU8URyyVw64oMHPdW%2Fly7h9BwXbmwSjrLuWpCQ6ZVuHVvrVWGCVmPuW5KWE2VOM%2BhzA%2FepELTE7y32fKoHXMjZuOsz2Mh0gYS4%2BN4BE%2Fx7sBEqAHsVlRj0UcSRWU7EXGs3X4WnsfzP%2FTAPrqxid95imjfqXMwJUPHMCeprey2NuigZgT6bUibYpCo253ZenyVIWFSFRdWSyNXLcRVXyc2Zg7INndKHY0mDjl8GRe2IUZTRxyT9q7vCancioUKE6iRwv6XHqw%2Fpd5KrRiy43OZjO1e0IBjnZj3G%2FQzWSKIvka6vCTdZZ4aVezi%2B9URLt5JF%2FMMW5rr7e1hJw233mENRB3e08BhJH1zF";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDmDDX1NouFIw5Wq9uUz5QrARzpQLPnFlonSjyMSqXOhWX5ukbnDmQiRkwbWjBbUfrWmaqKzk6ZD6la7Xis0UM7PRd/DxJzb9gOUimJMivbn36AyTS9GW6gQqHSAH2GxRuxfAjAaq76AnfZyQLcd77nk3gBkYqGzaNEA6HPuIajFRHRy4SGaranehC6MkJTRHSC3OrgSIVrCC9c9bncSciuXTuH07oB5FwrUxyWRtUcVZSf+aaNAn7GYHyF+cEYEqU/y4GUhCAbBU8URyyVw64oMHPdW/ly7h9BwXbmwSjrLuWpCQ6ZVuHVvrVWGCVmPuW5KWE2VOM+hzA/epELTE7y32fKoHXMjZuOsz2Mh0gYS4+N4BE/x7sBEqAHsVlRj0UcSRWU7EXGs3X4WnsfzP/TAPrqxid95imjfqXMwJUPHMCeprey2NuigZgT6bUibYpCo253ZenyVIWFSFRdWSyNXLcRVXyc2Zg7INndKHY0mDjl8GRe2IUZTRxyT9q7vCancioUKE6iRwv6XHqw/pd5KrRiy43OZjO1e0IBjnZj3G/QzWSKIvka6vCTdZZ4aVezi+9URLt5JF/MMW5rr7e1hJw233mENRB3e08BhJH1zF";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    

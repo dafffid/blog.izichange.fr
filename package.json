@@ -1,0 +1,49 @@
+{
+  "name": "izichange-blog",
+  "version": "1.0.0",
+  "description": "Blog iZiChange - Expertise Accompagnement Digital & Formation IA TPE PME Occitanie",
+  "homepage": "https://www.izichange.fr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/izichange/blog.git"
+  },
+  "keywords": [
+    "IA",
+    "formation",
+    "TPE",
+    "PME",
+    "transformation digitale",
+    "Occitanie",
+    "accompagnement digital",
+    "cybersécurité",
+    "digitalisation"
+  ],
+  "author": {
+    "name": "iZiChange",
+    "email": "contact@izichange.fr",
+    "url": "https://www.izichange.fr"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "serve": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build",
+    "clean": "bundle exec jekyll clean",
+    "dev": "bundle exec jekyll serve --livereload --drafts",
+    "production": "JEKYLL_ENV=production bundle exec jekyll build"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "config": {
+    "github_pages": true,
+    "jekyll_version": ">=3.9.0"
+  }
+}

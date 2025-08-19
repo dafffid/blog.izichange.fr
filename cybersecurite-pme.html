@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersécurité PME : Protection &amp; Solutions Sécurité 2025 | iZiChange Occitanie</title>
+    <meta name="description" content="Cybersécurité PME Occitanie : guide protection entreprises, menaces cyber actuelles, solutions sécurité adaptées TPE PME, sensibilisation équipes. Expert cybersécurité accompagnement iZiChange Occitanie.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --izichange-blue: #1F2A63;
+            --izichange-orange: #F39448;
+        }
+        .bg-izichange-blue { background-color: var(--izichange-blue); }
+        .bg-izichange-orange { background-color: var(--izichange-orange); }
+        .text-izichange-blue { color: var(--izichange-blue); }
+        .text-izichange-orange { color: var(--izichange-orange); }
+        .border-izichange-blue { border-color: var(--izichange-blue); }
+        .border-izichange-orange { border-color: var(--izichange-orange); }
+        .hover\:bg-izichange-blue:hover { background-color: var(--izichange-blue); }
+        .hover\:bg-izichange-orange:hover { background-color: var(--izichange-orange); }
+        .hover\:text-izichange-orange:hover { color: var(--izichange-orange); }
+        
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .shadow-custom { box-shadow: 0 10px 25px rgba(31, 42, 99, 0.1); }
+        .cyber-card { 
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            border-left: 4px solid var(--izichange-orange);
+        }
+        .threat-card {
+            background: linear-gradient(145deg, #fef2f2 0%, #fee2e2 100%);
+            border-left: 4px solid #dc2626;
+        }
+        .solution-card {
+            background: linear-gradient(145deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 4px solid #16a34a;
+        }
+        .stats-card {
+            background: linear-gradient(145deg, var(--izichange-blue) 0%, #1e3a8a 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Header -->
+    <nav class="bg-izichange-blue shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="https://www.izichange.fr/" class="text-izichange-orange text-2xl font-bold">
+                        iZiChange
+                    </a>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="https://www.izichange.fr/" class="text-white hover:text-izichange-orange transition duration-300">Accueil</a>
+                    <a href="https://www.izichange.fr/#services" class="text-white hover:text-izichange-orange transition duration-300">Services</a>
+                    <a href="https://www.izichange.fr/#processus" class="text-white hover:text-izichange-orange transition duration-300">Processus</a>
+                    <a href="https://www.izichange.fr/#expertise" class="text-white hover:text-izichange-orange transition duration-300">Expertise</a>
+                    <a href="https://www.izichange.fr/#equipe" class="text-white hover:text-izichange-orange transition duration-300">Équipe</a>
+                    <a href="https://www.izichange.fr/#temoignages" class="text-white hover:text-izichange-orange transition duration-300">Témoignages</a>
+                    <a href="https://www.izichange.fr/#contact" class="text-white hover:text-izichange-orange transition duration-300">Contact</a>
+                    <a href="index.html" class="bg-izichange-orange text-white px-4 py-2 rounded-md hover:bg-orange-600 transition duration-300">Blog</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-white hover:text-izichange-orange">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Navigation Breadcrumb -->
+    <div class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-izichange-blue hover:text-izichange-orange transition duration-300">
+                    <i class="fas fa-home mr-1"></i>Blog iZiChange
+                </a>
+                <span class="text-gray-500">/</span>
+                <span class="text-gray-700">Cybersécurité PME</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i class="fas fa-shield-alt mr-2"></i>
+                    Guide Cybersécurité PME 2025
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-izichange-blue mb-6">
+                    Cybersécurité PME : <br>
+                    <span class="text-izichange-orange">Protection & Solutions</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
+                    Guide complet pour protéger votre entreprise des cybermenaces. Solutions adaptées aux TPE-PME, sensibilisation des équipes et accompagnement expert en Occitanie.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#evaluation-cyber" class="bg-izichange-blue text-white px-8 py-3 rounded-lg hover:bg-blue-800 transition duration-300 font-semibold">
+                        <i class="fas fa-search mr-2"></i>Évaluer ma sécurité
+                    </a>
+                    <a href="https://www.izichange.fr/#contact" class="bg-izichange-orange text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition duration-300 font-semibold">
+                        <i class="fas fa-phone mr-2"></i>Diagnostic gratuit
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="stats-card text-white p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-izichange-orange mb-2">75%</div>
+                    <p class="text-sm">des PME victimes de cyberattaques</p>
+                </div>
+                <div class="stats-card text-white p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-izichange-orange mb-2">€50k</div>
+                    <p class="text-sm">coût moyen d'une cyberattaque</p>
+                </div>
+                <div class="stats-card text-white p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-izichange-orange mb-2">60%</div>
+                    <p class="text-sm">ferment dans les 6 mois</p>
+                </div>
+                <div class="stats-card text-white p-6 rounded-lg text-center">
+                    <div class="text-3xl font-bold text-izichange-orange mb-2">95%</div>
+                    <p class="text-sm">causées par l'erreur humaine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Navigation -->
+    <div class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="index.html" class="flex items-center bg-gray-100 hover:bg-izichange-blue hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                    <i class="fas fa-home mr-2"></i>Accueil Blog
+                </a>
+                <a href="formation-ia-tpe-pme.html" class="flex items-center bg-gray-100 hover:bg-izichange-blue hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                    <i class="fas fa-robot mr-2"></i>Formation IA TPE PME
+                </a>
+                <a href="digitalisation-tpe-pme.html" class="flex items-center bg-gray-100 hover:bg-izichange-blue hover:text-white px-6 py-3 rounded-lg transition duration-300">
+                    <i class="fas fa-digital-tachograph mr-2"></i>Digitalisation TPE PME
+                </a>
+                <a href="cybersecurite-pme.html" class="flex items-center bg-izichange-orange text-white px-6 py-3 rounded-lg">
+                    <i class="fas fa-shield-alt mr-2"></i>Cybersécurité PME
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        
+        <!-- Introduction -->
+        <section class="mb-16">
+            <div class="cyber-card p-8 rounded-lg shadow-custom">
+                <h2 class="text-3xl font-bold text-izichange-blue mb-6">
+                    <i class="fas fa-exclamation-triangle text-izichange-orange mr-3"></i>
+                    Pourquoi la cybersécurité est cruciale pour votre PME ?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-gray-700 text-lg mb-6">
+                            En 2024, <strong>les cyberattaques contre les PME ont augmenté de 85%</strong>. Les pirates ciblent désormais prioritairement les petites et moyennes entreprises, considérées comme plus vulnérables que les grandes corporations.
+                        </p>
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-exclamation-circle text-red-500 mr-2"></i>
+                                <strong class="text-red-800">Réalité alarmante :</strong>
+                            </div>
+                            <p class="text-red-700 mt-2">
+                                60% des PME victimes d'une cyberattaque ferment définitivement dans les 6 mois suivant l'incident.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-izichange-blue text-white p-6 rounded-lg">
+                            <h3 class="text-xl font-bold mb-4">
+                                <i class="fas fa-target text-izichange-orange mr-2"></i>
+                                Principales cibles des hackers :
+                            </h3>
+                            <ul class="space-y-2">
+                                <li><i class="fas fa-check text-izichange-orange mr-2"></i>Données clients et prospects</li>
+                                <li><i class="fas fa-check text-izichange-orange mr-2"></i>Informations financières</li>
+                                <li><i class="fas fa-check text-izichange-orange mr-2"></i>Propriété intellectuelle</li>
+                                <li><i class="fas fa-check text-izichange-orange mr-2"></i>Accès aux systèmes</li>
+                                <li><i class="fas fa-check text-izichange-orange mr-2"></i>Données de santé (RGPD)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menaces principales -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-8 text-center">
+                <i class="fas fa-virus text-red-500 mr-3"></i>
+                Les principales cybermenaces pour les PME
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Ransomware -->
+                <div class="threat-card p-6 rounded-lg shadow-custom">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-lock text-4xl text-red-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">Ransomware</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Chiffrement de vos données avec demande de rançon. <strong>Coût moyen : 185k€</strong>
+                    </p>
+                    <div class="bg-red-100 p-3 rounded text-sm">
+                        <strong>Impact :</strong> Paralysie totale de l'activité, perte de données, atteinte à la réputation
+                    </div>
+                </div>
+
+                <!-- Phishing -->
+                <div class="threat-card p-6 rounded-lg shadow-custom">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-envelope text-4xl text-red-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">Phishing</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Emails frauduleux pour voler identifiants. <strong>95% des attaques réussies</strong>
+                    </p>
+                    <div class="bg-red-100 p-3 rounded text-sm">
+                        <strong>Impact :</strong> Vol d'identifiants, accès non autorisé, fraude financière
+                    </div>
+                </div>
+
+                <!-- Malware -->
+                <div class="threat-card p-6 rounded-lg shadow-custom">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-bug text-4xl text-red-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">Malware</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Logiciels malveillants infectant les systèmes. <strong>560k nouvelles variantes/jour</strong>
+                    </p>
+                    <div class="bg-red-100 p-3 rounded text-sm">
+                        <strong>Impact :</strong> Espionnage, vol de données, contrôle à distance
+                    </div>
+                </div>
+
+                <!-- Attaques DDoS -->
+                <div class="threat-card p-6 rounded-lg shadow-custom">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-server text-4xl text-red-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">Attaques DDoS</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Saturation des serveurs pour rendre indisponible. <strong>+15% en 2024</strong>
+                    </p>
+                    <div class="bg-red-100 p-3 rounded text-sm">
+                        <strong>Impact :</strong> Site web inaccessible, perte de chiffre d'affaires
+                    </div>
+                </div>
+
+                <!-- Ingénierie sociale -->
+                <div class="threat-card p-6 rounded-lg shadow-custom">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-user-secret text-4xl text-red-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">Ingénierie sociale</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Manipulation psychologique des employés. <strong>Très efficace sur PME</strong>
+                    </p>
+                    <div class="bg-red-100 p-3 rounded text-sm">
+                        <strong>Impact :</strong> Révélation d'informations sensibles, accès facilitë
+                    </div>
+                </div>
+
+                <!-- Faux support technique -->
+                <div class="threat-card p-6 rounded-lg shadow-custom">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-phone text-4xl text-red-600 mb-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">Faux support</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Appels se faisant passer pour du support IT. <strong>En hausse de 35%</strong>
+                    </p>
+                    <div class="bg-red-100 p-3 rounded text-sm">
+                        <strong>Impact :</strong> Installation de malware, accès administrateur
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions de protection -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-8 text-center">
+                <i class="fas fa-shield-alt text-green-500 mr-3"></i>
+                Solutions de protection adaptées aux PME
+            </h2>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Solutions techniques -->
+                <div class="solution-card p-6 rounded-lg shadow-custom">
+                    <h3 class="text-2xl font-bold text-green-800 mb-6">
+                        <i class="fas fa-cogs mr-2"></i>Solutions techniques
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Antivirus professionnel multi-couches</strong>
+                                <p class="text-sm text-gray-600">Protection temps réel, détection comportementale, sandbox</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Firewall nouvelle génération (NGFW)</strong>
+                                <p class="text-sm text-gray-600">Filtrage applicatif, prévention d'intrusion, VPN sécurisé</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Sauvegarde automatisée 3-2-1</strong>
+                                <p class="text-sm text-gray-600">3 copies, 2 supports différents, 1 hors site/cloud</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Authentification multi-facteurs (MFA)</strong>
+                                <p class="text-sm text-gray-600">Double vérification pour tous les accès critiques</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Chiffrement des données</strong>
+                                <p class="text-sm text-gray-600">Protection des données sensibles au repos et en transit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solutions organisationnelles -->
+                <div class="solution-card p-6 rounded-lg shadow-custom">
+                    <h3 class="text-2xl font-bold text-green-800 mb-6">
+                        <i class="fas fa-users mr-2"></i>Solutions organisationnelles
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Formation cybersécurité du personnel</strong>
+                                <p class="text-sm text-gray-600">Sensibilisation phishing, bonnes pratiques, tests réguliers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Politique de sécurité documentée</strong>
+                                <p class="text-sm text-gray-600">Procédures claires, rôles définis, mise à jour régulière</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Plan de continuité d'activité (PCA)</strong>
+                                <p class="text-sm text-gray-600">Procédures de récupération, tests de restauration</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Gestion des accès et privilèges</strong>
+                                <p class="text-sm text-gray-600">Principe du moindre privilège, révision périodique</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mr-3 mt-1"></i>
+                            <div>
+                                <strong>Monitoring et supervision 24/7</strong>
+                                <p class="text-sm text-gray-600">Détection d'anomalies, réponse aux incidents</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Auto-évaluation -->
+        <section id="evaluation-cyber" class="mb-16">
+            <div class="cyber-card p-8 rounded-lg shadow-custom">
+                <h2 class="text-3xl font-bold text-izichange-blue mb-8 text-center">
+                    <i class="fas fa-clipboard-check text-izichange-orange mr-3"></i>
+                    Auto-évaluation : Testez votre niveau de sécurité
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg border">
+                        <h3 class="text-xl font-bold text-izichange-blue mb-4">
+                            <i class="fas fa-lock mr-2"></i>Sécurité technique
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Antivirus professionnel sur tous les postes</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Firewall configuré et à jour</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Sauvegardes automatisées testées</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Mises à jour système automatiques</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Authentification multi-facteurs activée</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">VPN pour accès distant</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg border">
+                        <h3 class="text-xl font-bold text-izichange-blue mb-4">
+                            <i class="fas fa-users mr-2"></i>Facteur humain
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Formation cybersécurité annuelle</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Tests de phishing réguliers</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Politique de mots de passe stricte</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Procédure de signalement d'incidents</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Sensibilisation réseaux sociaux</span>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" class="mr-3 text-izichange-blue">
+                                <span class="text-sm">Référent cybersécurité désigné</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 p-6 bg-izichange-blue text-white rounded-lg text-center">
+                    <h4 class="text-xl font-bold mb-4">Interprétation de votre score</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-red-600 p-3 rounded">
+                            <strong>0-4 points : Niveau critique</strong><br>
+                            Votre entreprise est très vulnérable. Action immédiate requise.
+                        </div>
+                        <div class="bg-yellow-600 p-3 rounded">
+                            <strong>5-8 points : Niveau moyen</strong><br>
+                            Bases présentes mais améliorations nécessaires.
+                        </div>
+                        <div class="bg-green-600 p-3 rounded">
+                            <strong>9-12 points : Bon niveau</strong><br>
+                            Bonne protection, restez vigilant et mettez à jour.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan d'action -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-8 text-center">
+                <i class="fas fa-route text-izichange-orange mr-3"></i>
+                Plan d'action cybersécurité en 90 jours
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- 30 premiers jours -->
+                <div class="bg-white p-6 rounded-lg shadow-custom border-t-4 border-red-500">
+                    <div class="text-center mb-4">
+                        <div class="bg-red-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="font-bold">30j</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-red-700">Actions prioritaires</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                            <span>Audit sécurité complet des systèmes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                            <span>Installation antivirus professionnel</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                            <span>Mise en place sauvegardes automatiques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                            <span>Formation urgente équipes phishing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-red-500 mr-2 mt-1"></i>
+                            <span>Activation MFA comptes critiques</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 60 jours -->
+                <div class="bg-white p-6 rounded-lg shadow-custom border-t-4 border-yellow-500">
+                    <div class="text-center mb-4">
+                        <div class="bg-yellow-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="font-bold">60j</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-yellow-700">Consolidation</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-yellow-500 mr-2 mt-1"></i>
+                            <span>Déploiement firewall NGFW</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-yellow-500 mr-2 mt-1"></i>
+                            <span>Politique de sécurité formalisée</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-yellow-500 mr-2 mt-1"></i>
+                            <span>Formation approfondie du personnel</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-yellow-500 mr-2 mt-1"></i>
+                            <span>Tests de restauration des sauvegardes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-yellow-500 mr-2 mt-1"></i>
+                            <span>Gestion centralisée des accès</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 90 jours -->
+                <div class="bg-white p-6 rounded-lg shadow-custom border-t-4 border-green-500">
+                    <div class="text-center mb-4">
+                        <div class="bg-green-500 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="font-bold">90j</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-700">Optimisation</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-2 mt-1"></i>
+                            <span>SOC/monitoring 24/7 en place</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-2 mt-1"></i>
+                            <span>Plan de continuité d'activité testé</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-2 mt-1"></i>
+                            <span>Exercices de simulation cyberattaque</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-2 mt-1"></i>
+                            <span>Audit de conformité RGPD</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-green-500 mr-2 mt-1"></i>
+                            <span>Certification/labellisation sécurité</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coûts et ROI -->
+        <section class="mb-16">
+            <div class="cyber-card p-8 rounded-lg shadow-custom">
+                <h2 class="text-3xl font-bold text-izichange-blue mb-8 text-center">
+                    <i class="fas fa-euro-sign text-izichange-orange mr-3"></i>
+                    Investissement cybersécurité : Coûts vs Bénéfices
+                </h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                        <h3 class="text-xl font-bold text-red-800 mb-4">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            Coût d'une cyberattaque
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span>Interruption d'activité</span>
+                                <strong class="text-red-600">15-50k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Récupération des données</span>
+                                <strong class="text-red-600">10-30k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Expertise légale/forensique</span>
+                                <strong class="text-red-600">5-15k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Notification clients/CNIL</span>
+                                <strong class="text-red-600">2-8k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Perte de réputation</span>
+                                <strong class="text-red-600">10-100k€</strong>
+                            </div>
+                            <div class="border-t pt-3 flex justify-between text-lg">
+                                <strong>Total moyen</strong>
+                                <strong class="text-red-600">50-200k€</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            Investissement protection
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span>Audit initial + plan d'action</span>
+                                <strong class="text-green-600">2-5k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Solutions techniques (1ère année)</span>
+                                <strong class="text-green-600">3-8k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Formation du personnel</span>
+                                <strong class="text-green-600">1-3k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Accompagnement annuel</span>
+                                <strong class="text-green-600">2-6k€</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Monitoring/maintenance</span>
+                                <strong class="text-green-600">1-4k€</strong>
+                            </div>
+                            <div class="border-t pt-3 flex justify-between text-lg">
+                                <strong>Total annuel</strong>
+                                <strong class="text-green-600">9-26k€</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-izichange-blue text-white p-6 rounded-lg text-center">
+                    <h4 class="text-2xl font-bold mb-4">ROI Protection Cybersécurité</h4>
+                    <div class="text-4xl font-bold text-izichange-orange mb-2">300-800%</div>
+                    <p class="text-lg">
+                        Pour chaque euro investi en cybersécurité, vous économisez 3 à 8 euros en évitant les cyberattaques
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- iZiChange accompagnement -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-izichange-blue to-blue-800 text-white p-8 rounded-lg shadow-custom">
+                <h2 class="text-3xl font-bold mb-8 text-center">
+                    <i class="fas fa-handshake text-izichange-orange mr-3"></i>
+                    iZiChange : Votre Expert Cybersécurité en Occitanie
+                </h2>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-izichange-orange mb-4">
+                            <i class="fas fa-star mr-2"></i>Notre approche pragmatique
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-izichange-orange mr-3 mt-1"></i>
+                                <span><strong>Audit personnalisé</strong> de votre infrastructure et processus existants</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-izichange-orange mr-3 mt-1"></i>
+                                <span><strong>Solutions adaptées</strong> à votre taille d'entreprise et budget</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-izichange-orange mr-3 mt-1"></i>
+                                <span><strong>Accompagnement continu</strong> et formation de vos équipes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-izichange-orange mr-3 mt-1"></i>
+                                <span><strong>ROI garanti</strong> avec des résultats mesurables dès 30 jours</span>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 p-4 bg-blue-700 rounded-lg">
+                            <h4 class="font-bold text-izichange-orange mb-2">
+                                <i class="fas fa-trophy mr-2"></i>Expertise reconnue
+                            </h4>
+                            <p class="text-sm">
+                                Certifiés ISO 27001, experts en cybersécurité PME avec +200 entreprises accompagnées en Occitanie
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-izichange-orange mb-4">
+                            <i class="fas fa-cogs mr-2"></i>Nos services cybersécurité
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="bg-blue-700 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">🔍 Audit & Diagnostic</h4>
+                                <p class="text-sm">Évaluation complète de vos vulnérabilités et risques cyber</p>
+                            </div>
+                            <div class="bg-blue-700 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">🛡️ Mise en place des protections</h4>
+                                <p class="text-sm">Déploiement des solutions techniques et organisationnelles</p>
+                            </div>
+                            <div class="bg-blue-700 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">👥 Formation & Sensibilisation</h4>
+                                <p class="text-sm">Programmes sur-mesure pour vos collaborateurs</p>
+                            </div>
+                            <div class="bg-blue-700 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">📊 Supervision 24/7</h4>
+                                <p class="text-sm">Monitoring continu et réponse aux incidents</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="https://www.izichange.fr/#contact" class="bg-izichange-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg transition duration-300 font-semibold">
+                            <i class="fas fa-calendar-alt mr-2"></i>Diagnostic gratuit
+                        </a>
+                        <a href="mailto:contact@izichange.fr" class="bg-white text-izichange-blue hover:bg-gray-100 px-8 py-3 rounded-lg transition duration-300 font-semibold">
+                            <i class="fas fa-envelope mr-2"></i>contact@izichange.fr
+                        </a>
+                        <a href="tel:+33686846429" class="bg-white text-izichange-blue hover:bg-gray-100 px-8 py-3 rounded-lg transition duration-300 font-semibold">
+                            <i class="fas fa-phone mr-2"></i>06 86 84 64 29
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles connexes -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-izichange-blue mb-8 text-center">
+                <i class="fas fa-newspaper text-izichange-orange mr-3"></i>
+                Explorez nos autres guides
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="formation-ia-tpe-pme.html" class="block bg-white p-6 rounded-lg shadow-custom hover:shadow-lg transition duration-300 border hover:border-izichange-blue">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-izichange-blue text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-robot text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-izichange-blue">Formation IA TPE PME</h3>
+                            <p class="text-gray-600 text-sm">Guide complet Intelligence Artificielle</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Découvrez comment l'Intelligence Artificielle peut transformer votre PME avec des exemples concrets, statistiques officielles et accompagnement expert.
+                    </p>
+                    <div class="flex items-center text-izichange-blue font-semibold">
+                        <span>Lire l'article</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+
+                <a href="digitalisation-tpe-pme.html" class="block bg-white p-6 rounded-lg shadow-custom hover:shadow-lg transition duration-300 border hover:border-izichange-blue">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-izichange-orange text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-digital-tachograph text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-izichange-blue">Digitalisation TPE PME</h3>
+                            <p class="text-gray-600 text-sm">Guide transformation digitale 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Guide complet pour réussir votre transformation digitale : étapes, outils essentiels, erreurs à éviter et accompagnement expert.
+                    </p>
+                    <div class="flex items-center text-izichange-blue font-semibold">
+                        <span>Lire l'article</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-izichange-blue text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Logo et description -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <span class="text-izichange-orange text-3xl font-bold">iZiChange</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Expert en accompagnement digital, transformation IA et cybersécurité pour TPE-PME en Occitanie. 
+                        Rendre l'innovation technologique accessible et sécurisée pour tous.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.izichange.fr/#contact" class="bg-izichange-orange hover:bg-orange-600 px-6 py-2 rounded-lg transition duration-300">
+                            <i class="fas fa-envelope mr-2"></i>Contact
+                        </a>
+                        <a href="tel:+33686846429" class="border border-white hover:bg-white hover:text-izichange-blue px-6 py-2 rounded-lg transition duration-300">
+                            <i class="fas fa-phone mr-2"></i>06 86 84 64 29
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-lg font-bold text-izichange-orange mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.izichange.fr/" class="text-gray-300 hover:text-white transition duration-300">Accueil</a></li>
+                        <li><a href="https://www.izichange.fr/#services" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="https://www.izichange.fr/#expertise" class="text-gray-300 hover:text-white transition duration-300">Expertise</a></li>
+                        <li><a href="https://www.izichange.fr/#equipe" class="text-gray-300 hover:text-white transition duration-300">Équipe</a></li>
+                        <li><a href="https://www.izichange.fr/#temoignages" class="text-gray-300 hover:text-white transition duration-300">Témoignages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Blog -->
+                <div>
+                    <h4 class="text-lg font-bold text-izichange-orange mb-4">Blog</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Accueil Blog</a></li>
+                        <li><a href="formation-ia-tpe-pme.html" class="text-gray-300 hover:text-white transition duration-300">Formation IA</a></li>
+                        <li><a href="digitalisation-tpe-pme.html" class="text-gray-300 hover:text-white transition duration-300">Digitalisation</a></li>
+                        <li><a href="cybersecurite-pme.html" class="text-izichange-orange">Cybersécurité</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 iZiChange - Tous droits réservés | 
+                    <a href="https://www.izichange.fr/" class="text-izichange-orange hover:text-orange-300 transition duration-300">www.izichange.fr</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDmDDX1NouFIw5Wq9uUz5QrARzpQLPnFlonSjyMSqXOhWX5ukbnDmQiRkwbWjBbUfrWmaqKzk6ZD6la7Xis0UM7PRd%2FDxJzb9gOUimJMivbn36AyTS9GW6gQqHSAH2GxRuxfAjAaq76AnfZyQLcd77nk3gBkYqGzaNEA6HPuIajFRHRy4SGaranehC6MkJTRHSC3OrgSIVrCC9c9bncSciuWpkcD0mfdxTuFJYjd9T3lRyifXiL9SOA5FVXjXiCTzkwqhQ8oQ4dTN5kpT%2FKnFD2cw1JIpF41IG8zxUgUJKz3GepSZKetE628Odc4Kv7MS5clV8WExN59EhdzR6nYjubxSiRe3RZCG0B0BaFvPflQ3Ei8qf4WXhqmP86wjzxiG75wO6S24IB5EJyfhGxFn%2BzRoA0kez996aWTkzKSgfg5W4huUv%2BzMXLTW1mffHqEnFdh8mIMTiw26gZtN8I34yEvoXVQR5bsU2t7Mp0EvWQG5s4iPxYQQ8H9ftDSoXpZX5c6UN8jQm7SqW9sbekHgRIblU3V3gV4ZsO%2F1d8g2kOEeFDMfHgR%2F%2B3QO7xCLhRrsmzObQ1gQmZdmn545wdaO%2FD5oIm%2B9QZpdX%2BiX%2FrG5daMh";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDmDDX1NouFIw5Wq9uUz5QrARzpQLPnFlonSjyMSqXOhWX5ukbnDmQiRkwbWjBbUfrWmaqKzk6ZD6la7Xis0UM7PRd/DxJzb9gOUimJMivbn36AyTS9GW6gQqHSAH2GxRuxfAjAaq76AnfZyQLcd77nk3gBkYqGzaNEA6HPuIajFRHRy4SGaranehC6MkJTRHSC3OrgSIVrCC9c9bncSciuWpkcD0mfdxTuFJYjd9T3lRyifXiL9SOA5FVXjXiCTzkwqhQ8oQ4dTN5kpT/KnFD2cw1JIpF41IG8zxUgUJKz3GepSZKetE628Odc4Kv7MS5clV8WExN59EhdzR6nYjubxSiRe3RZCG0B0BaFvPflQ3Ei8qf4WXhqmP86wjzxiG75wO6S24IB5EJyfhGxFn+zRoA0kez996aWTkzKSgfg5W4huUv+zMXLTW1mffHqEnFdh8mIMTiw26gZtN8I34yEvoXVQR5bsU2t7Mp0EvWQG5s4iPxYQQ8H9ftDSoXpZX5c6UN8jQm7SqW9sbekHgRIblU3V3gV4ZsO/1d8g2kOEeFDMfHgR/+3QO7xCLhRrsmzObQ1gQmZdmn545wdaO/D5oIm+9QZpdX+iX/rG5daMh";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
