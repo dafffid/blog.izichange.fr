@@ -1,11 +1,11 @@
 {
-  "name": "izichange-blog",
+  "name": "Symbotis-blog",
   "version": "1.0.0",
-  "description": "Blog iZiChange - Expertise Accompagnement Digital & Formation IA TPE PME Occitanie",
-  "homepage": "https://www.izichange.fr",
+  "description": "Blog Symbotis - Expertise Accompagnement Digital & Formation IA TPE PME Occitanie",
+  "homepage": "https://www.Symbotis.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/izichange/blog.git"
+    "url": "https://github.com/Symbotis/blog.git"
   },
   "keywords": [
     "IA",
@@ -19,9 +19,9 @@
     "digitalisation"
   ],
   "author": {
-    "name": "iZiChange",
-    "email": "contact@izichange.fr",
-    "url": "https://www.izichange.fr"
+    "name": "Symbotis",
+    "email": "contact@Symbotis.com",
+    "url": "https://www.Symbotis.com"
   },
   "license": "MIT",
   "engines": {
