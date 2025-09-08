@@ -1,4 +1,4 @@
-# Guide de Déploiement - Blog iZiChange sur GitHub Pages
+# Guide de Déploiement - Blog Symbotis sur GitHub Pages
 
 ## Table des Matières
 1. [Prérequis](#prérequis)
@@ -15,7 +15,7 @@
 
 Avant de commencer, assurez-vous d'avoir :
 - Un compte GitHub actif
-- Accès aux fichiers du blog iZiChange
+- Accès aux fichiers du blog Symbotis
 - Une connexion internet stable
 - Un navigateur web moderne
 
@@ -35,8 +35,8 @@ Avant de commencer, assurez-vous d'avoir :
 
 3. **Configuration du repository**
    ```
-   Repository name: izichange-blog
-   Description: Blog iZiChange - Plateforme de changement et d'innovation
+   Repository name: Symbotis-blog
+   Description: Blog Symbotis - Plateforme de changement et d'innovation
    Visibility: Public (obligatoire pour GitHub Pages gratuit)
    Initialize with:
    ☑️ Add a README file
@@ -55,8 +55,8 @@ Avant de commencer, assurez-vous d'avoir :
 
 **Option B : Via Git (pour utilisateurs avancés)**
 ```bash
-git clone https://github.com/VOTRE_USERNAME/izichange-blog.git
-cd izichange-blog
+git clone https://github.com/VOTRE_USERNAME/Symbotis-blog.git
+cd Symbotis-blog
 ```
 
 ---
@@ -66,7 +66,7 @@ cd izichange-blog
 ### Méthode 1 : Upload via Interface Web GitHub
 
 1. **Accéder au repository**
-   - Ouvrez votre repository `izichange-blog` sur GitHub
+   - Ouvrez votre repository `Symbotis-blog` sur GitHub
 
 2. **Upload des fichiers**
    - Cliquez sur "Add file" → "Upload files"
@@ -75,7 +75,7 @@ cd izichange-blog
 
 3. **Structure des fichiers à uploader**
    ```
-   izichange-blog/
+   Symbotis-blog/
    ├── index.html (page d'accueil)
    ├── about.html
    ├── contact.html
@@ -97,7 +97,7 @@ cd izichange-blog
 
 4. **Commit des fichiers**
    - Scrollez vers le bas
-   - Ajoutez un message de commit : "Initial upload - iZiChange blog files"
+   - Ajoutez un message de commit : "Initial upload - Symbotis blog files"
    - Sélectionnez "Commit directly to the main branch"
    - Cliquez "Commit changes"
 
@@ -111,7 +111,7 @@ cp -r /chemin/vers/blog/* ./
 git add .
 
 # Commit
-git commit -m "Initial upload - iZiChange blog files"
+git commit -m "Initial upload - Symbotis blog files"
 
 # Push vers GitHub
 git push origin main
@@ -136,7 +136,7 @@ git push origin main
 
 3. **Sauvegarder**
    - Cliquez "Save"
-   - GitHub affichera l'URL de votre site : `https://VOTRE_USERNAME.github.io/izichange-blog`
+   - GitHub affichera l'URL de votre site : `https://VOTRE_USERNAME.github.io/Symbotis-blog`
 
 ### Étape 2 : Configuration personnalisée (optionnel)
 
@@ -164,7 +164,7 @@ git push origin main
 ### Vérification 2 : Accès au site
 
 1. **Tester l'URL principale**
-   - Ouvrez `https://VOTRE_USERNAME.github.io/izichange-blog`
+   - Ouvrez `https://VOTRE_USERNAME.github.io/Symbotis-blog`
    - Vérifiez que la page d'accueil se charge correctement
 
 2. **Tester la navigation**
@@ -342,5 +342,5 @@ En cas de problème non résolu :
 
 ---
 
-*Guide créé pour le déploiement du blog iZiChange*
+*Guide créé pour le déploiement du blog Symbotis*
 *Dernière mise à jour : 2025-01-18*
