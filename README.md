@@ -48,7 +48,7 @@ blog/
 **Symbotis Occitanie**
 - Email : contact@Symbotis.fr
 - Téléphone : +33 (0)6 86 84 64 29
-- Site web : https://www.Symbotis.fr
+- Site web : https://www.Symbotis.com
 
 ## 📈 SEO & Analytics
 
