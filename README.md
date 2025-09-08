@@ -1,8 +1,8 @@
-# Blog iZiChange - Expertise Accompagnement Digital & Formation IA
+# Blog Symbotis - Expertise Accompagnement Digital & Formation IA
 
 ## 🎯 À propos
 
-Blog officiel d'iZiChange Occitanie - Expert en accompagnement digital, transformation IA et formation TPE PME.
+Blog officiel de Symbotis - Expert en accompagnement digital, transformation IA, automatisation et formation TPE PME ETI.
 
 ## 📋 Contenu
 
@@ -45,10 +45,10 @@ blog/
 
 ## 📞 Contact
 
-**iZiChange Occitanie**
-- Email : contact@izichange.fr
+**Symbotis Occitanie**
+- Email : contact@Symbotis.fr
 - Téléphone : +33 (0)6 86 84 64 29
-- Site web : https://www.izichange.fr
+- Site web : https://www.Symbotis.fr
 
 ## 📈 SEO & Analytics
 
@@ -67,4 +67,4 @@ Pour mettre à jour le blog :
 
 ---
 
-© 2025 iZiChange - Tous droits réservés
+© 2025 Symbotis - Tous droits réservés
